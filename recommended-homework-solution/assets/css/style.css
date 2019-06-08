@@ -90,6 +90,7 @@ nav a {
   color: #999;
   text-decoration: none;
   border-left: 1px solid #efefef;
+ 
 }
 
 nav a:first-child {
@@ -311,6 +312,14 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 640px) {
+
+
+  #masthead {
+    position: static;; 
+    top:0; 
+   
+}
+
   body { 
     position: static;
    }
@@ -319,6 +328,7 @@ input[type=submit] {
     position: static;
     width: 640px;
     margin: 0;
+     
    }
 
    #logo {
@@ -334,6 +344,7 @@ input[type=submit] {
     margin-bottom: 10px;
     padding-left: 155px;
     text-align: center;
+    
   }
 
   nav a {
@@ -362,6 +373,7 @@ input[type=submit] {
   .work {
     width: 100%;
   }
+
 
   footer {
     width: 640px;
