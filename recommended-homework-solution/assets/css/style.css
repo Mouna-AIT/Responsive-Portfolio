@@ -35,7 +35,7 @@ h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  color: #4aaaa5;
+  color: magenta;
 }
 
 h1 {
@@ -74,7 +74,7 @@ h3 {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background: #4aaaa5;
+  background: magenta;
 }
 
 nav {
@@ -106,7 +106,7 @@ footer {
   color: #cccccc;
   text-align: center;
   background: #666666;
-  border-top: 8px solid #4aaaa5;
+  border-top: 8px solid #d836b5;
   height: 50px;
 }
 
@@ -164,7 +164,7 @@ h3, h2 {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: #4aaaa5;
+  background: magenta;
   border-bottom: 0;
 }
 
@@ -212,6 +212,159 @@ input[type=submit] {
   font-size: 18px;
   color: #ffffff;
   cursor: pointer;
-  background: #4aaaa5;
+  background: magenta;
   border: 0 none;
+}
+
+/*Media Queries */
+@media screen and (max-width: 980px) {
+  body {
+    position: static;
+  }
+
+  #masthead {
+    width: 980px;
+  }
+
+  #logo {
+    width: 250px;
+    margin-left: 50px;
+  }
+
+  nav {
+    margin-right: 100px;
+  }
+
+  .main-section {
+    width: 890px;
+    margin-left: 40px;
+   
+  }
+
+  .sidebar {
+    float: left;
+    width: 270px;
+    margin-left: 35px;
+  }
+
+  .auth-image {
+    width: 100%;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  .work:nth-child(even) {
+    float: left;
+  }
+
+  footer {
+    width: 980px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  #logo {
+    position: static;
+    width: 256px;
+  }
+
+  nav {
+   /* margin-right: 20px;
+    margin-bottom: 20px; */
+    width: 420px;
+  }
+
+  .main-section {
+    position: static;
+    width: 685px;
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+
+  .sidebar {
+    position: static;
+    width: 685px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+  }
+
+  .auth-image {
+    position: static;
+    width: 50%;
+  }
+
+  .work {
+    width: 290px;
+  }
+
+  footer {
+    width: 768px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  body { 
+    position: static;
+   }
+
+   .container {
+    position: static;
+    width: 640px;
+    margin: 0;
+   }
+
+   #logo {
+    position: static;
+    width: 640px;
+    margin: 0;
+  }
+
+  nav {
+    position: static;
+    width: 640px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    padding-left: 155px;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 0px 40px;
+  }
+
+  .main-section {
+    position: static;
+    width: 550px;
+    margin: 35px;
+    margin-bottom: 0px;
+  }
+
+  .auth-image {
+    position: static;
+    width: 100%;
+  }
+
+  .sidebar {
+    position: static;
+    float: left;
+    width: 550px;
+    margin: 35px;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  footer {
+    width: 640px;
+  }
+  
 }
